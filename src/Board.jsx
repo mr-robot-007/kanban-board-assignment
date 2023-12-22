@@ -1,0 +1,34 @@
+import Card from "./Card";
+import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
+import AddIcon from "@mui/icons-material/Add";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import Col from "./Col";
+import { useSelector } from "react-redux";
+function Board() {
+  const groupingTitle = useSelector((state) => state.filter.grouping);
+  const titles = useSelector((state) => state.filter[groupingTitle]);
+
+  const realtitles = useSelector((state) =>
+    groupingTitle !== "status"
+      ? state.filter[`${groupingTitle}Titles`]
+      : state.filter[groupingTitle]
+  );
+  console.log("real titles", realtitles);
+
+  console.log("titles ", titles);
+
+  return (
+    <div className=" max-w-full max-h-full gap-3 grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-around px-4 py-10 bg-gray-20 bg-gray-100 flex-wrap overflow-hidden  basis-auto ">
+      {titles.map((item, i) => (
+        <Col
+          title={item}
+          key={item.id ? item.id : item}
+          filterBy={groupingTitle}
+          _title={realtitles[i]}
+        />
+      ))}
+    </div>
+  );
+}
+
+export default Board;
