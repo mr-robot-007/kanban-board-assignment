@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { changeGrouping, changeOrdering } from "./filterSlice";
+import { changeGrouping, changeOrdering } from "../filterSlice";
 
 export default function SelectLabels() {
   const dispatch = useDispatch();

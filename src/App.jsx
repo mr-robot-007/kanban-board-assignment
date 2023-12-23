@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Header from "./Header";
-import Board from "./Board";
+import Header from "./components/Header";
+import Board from "./components/Board";
 
 import { useDispatch } from "react-redux";
 import { updateTickets, updateUserTitles, updateUsers } from "./filterSlice";
