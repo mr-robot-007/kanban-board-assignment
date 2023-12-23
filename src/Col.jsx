@@ -27,7 +27,7 @@ function Col({ title, filterBy, _title }) {
       }
     });
   }
-  console.log(_title);
+  // console.log(_title);
 
   //   const temp = tickets.filter((item) => item.status === "Backlog");
   //   console.log("temp",temp.length)
@@ -65,15 +65,15 @@ function Col({ title, filterBy, _title }) {
 
   return (
     <div className="flex flex-col gap-2 flex-wrap shrink">
-      <div className="flex justify-between mb-5">
+      <div className="flex justify-between mb-2">
         <p className="flex px-2">
           <RadioButtonUncheckedIcon className="p-1" />
           {/* {filterBy === "user" ? title.id : title} */}
           {_title}{" "}
-          <p className="dark:text-slate-300 text-slate-500">
+          <span className="dark:text-slate-300 text-slate-500">
             {" "}
             &nbsp; {custom_tickets.length}{" "}
-          </p>
+          </span>
         </p>
         <p className="flex px-2 dark:text-slate-300 text-slate-500">
           <AddIcon className="p-0.5" />

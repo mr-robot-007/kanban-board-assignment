@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        "3xl": "0 0 8px 0 #C4C4C4",
+      },
+    },
     screens: {
       sm: "500px",
       // => @media (min-width: 640px) { ... }

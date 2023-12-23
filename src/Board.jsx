@@ -13,9 +13,9 @@ function Board() {
       ? state.filter[`${groupingTitle}Titles`]
       : state.filter[groupingTitle]
   );
-  console.log("real titles", realtitles);
+  // console.log("real titles", realtitles);
 
-  console.log("titles ", titles);
+  // console.log("titles ", titles);
 
   return (
     <div className=" max-w-full h-[screen] dark:bg-black dark:text-white max-h-full gap-3 grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-around px-4 py-5 b bg-gray-100 flex-wrap overflow-hidden  basis-auto ">

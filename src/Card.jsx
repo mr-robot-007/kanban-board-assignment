@@ -5,7 +5,7 @@ import RadioButtonUncheckedTwoToneIcon from "@mui/icons-material/RadioButtonUnch
 
 function Card({ ticket }) {
   return (
-    <div className="dark:bg-[#1c212b] dark:text-slate-300  text-slate-500 border-2 border-[#ffffff22] dark:shadow-md rounded-md px-4 py-3 bg-white">
+    <div className="dark:bg-[#1c212b]  dark:text-slate-300 shadow-3xl text-slate-500 border-2 border-[#ffffff22] dark:shadow-md rounded-md px-4 py-3 bg-white">
       <header className="flex justify-between">
         <h2 className="font-light ">{ticket.id}</h2>
         <AccountCircleIcon />

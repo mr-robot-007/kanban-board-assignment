@@ -35,11 +35,11 @@ function Header() {
   //   }, [toggle]);
 
   return (
-    <div className=" dark:bg-[#1c212b]  relative">
+    <div className=" dark:bg-[#1c212b] bg-white relative">
       <div className="header flex items-center justify-between px-4 py-3">
         <div
           ref={toggleDivRef}
-          className=" dark:bg-[#1c212b] dark:text-white flex space-x-1  shadow-md bg-white items-center border-2 border-[#ffffff22] rounded-md px-2 py-1 text-slate-800"
+          className=" dark:bg-[#1c212b] dark:text-white flex space-x-1  shadow-3xl bg-white items-center border-2 border-[#ffffff22] rounded-md px-2 py-1 text-slate-800"
           onClick={handleToggle}
         >
           <TuneIcon />

@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div
-      className="bg-white  p-0 m-0 overflow-x-hidden max-w-full w-screen "
+      className="bg-gray-100 dark:bg-black h-screen max-h-full  p-0 m-0 overflow-x-hidden max-w-full w-screen "
       // onClick={() => turnToggleOff}
     >
       <Header />
