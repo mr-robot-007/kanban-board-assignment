@@ -9,6 +9,7 @@ import { updateTickets, updateUserTitles, updateUsers } from "./filterSlice";
 
 function App() {
   const dispatch = useDispatch();
+  localStorage.theme = "light";
   useEffect(
     function () {
       async function loadData() {
@@ -28,7 +29,7 @@ function App() {
 
   return (
     <div
-      className="bg-white p-0 m-0 overflow-x-hidden max-w-full w-screen "
+      className="bg-white  p-0 m-0 overflow-x-hidden max-w-full w-screen "
       // onClick={() => turnToggleOff}
     >
       <Header />

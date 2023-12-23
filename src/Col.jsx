@@ -69,9 +69,13 @@ function Col({ title, filterBy, _title }) {
         <p className="flex px-2">
           <RadioButtonUncheckedIcon className="p-1" />
           {/* {filterBy === "user" ? title.id : title} */}
-          {_title}
+          {_title}{" "}
+          <p className="dark:text-slate-300 text-slate-500">
+            {" "}
+            &nbsp; {custom_tickets.length}{" "}
+          </p>
         </p>
-        <p className="flex px-2">
+        <p className="flex px-2 dark:text-slate-300 text-slate-500">
           <AddIcon className="p-0.5" />
           <MoreHorizIcon className="p-0.5" />
         </p>

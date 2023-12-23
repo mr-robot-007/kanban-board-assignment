@@ -18,7 +18,7 @@ function Board() {
   console.log("titles ", titles);
 
   return (
-    <div className=" max-w-full max-h-full gap-3 grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-around px-4 py-10 bg-gray-20 bg-gray-100 flex-wrap overflow-hidden  basis-auto ">
+    <div className=" max-w-full h-[screen] dark:bg-black dark:text-white max-h-full gap-3 grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-around px-4 py-5 b bg-gray-100 flex-wrap overflow-hidden  basis-auto ">
       {titles.map((item, i) => (
         <Col
           title={item}
