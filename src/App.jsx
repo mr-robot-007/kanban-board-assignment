@@ -3,7 +3,6 @@ import "./App.css";
 import Header from "./Header";
 import Board from "./Board";
 
-import DropDown from "./DropDown";
 import { useDispatch } from "react-redux";
 import { updateTickets, updateUserTitles, updateUsers } from "./filterSlice";
 
@@ -30,7 +29,6 @@ function App() {
   return (
     <div
       className="bg-gray-100 dark:bg-black h-screen max-h-full  p-0 m-0 overflow-x-hidden max-w-full w-screen "
-      // onClick={() => turnToggleOff}
     >
       <Header />
       <Board />

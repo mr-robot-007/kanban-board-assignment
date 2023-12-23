@@ -21,7 +21,6 @@ function Card({ ticket }) {
         <div className="flex items-center border-2 border-slate-100 dark:border-[#ffffff22] rounded-md">
           <FiberManualRecordIcon className="p-1" />
           <p className="text-sm pr-1"> {ticket.tag} </p>
-          {/* <p className="text-sm pr-1"> {ticket.priority} </p> */}
         </div>
       </div>
     </div>

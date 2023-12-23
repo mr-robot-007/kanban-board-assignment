@@ -47,7 +47,3 @@ export const { changeGrouping, changeOrdering, updateTickets, updateUsers, updat
 
 export default filterSlice.reducer;
 
-// export function getUserNames() {
-//     const names = user
-
-// }

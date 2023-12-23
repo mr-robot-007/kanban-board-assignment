@@ -6,11 +6,6 @@ import { useSelector } from "react-redux";
 function Col({ title, filterBy, _title }) {
   const tickets = useSelector((state) => state.filter.tickets);
   const orderBy = useSelector((state) => state.filter.ordering);
-  //   if (filterBy === "user") {
-  //     title.forEach((item, index, arr) => {
-  //       arr[index] = arr[index].id;
-  //     });
-  //   }
   const x = title;
 
   function filterArray(array, filterBy, value) {
@@ -27,30 +22,7 @@ function Col({ title, filterBy, _title }) {
       }
     });
   }
-  // console.log(_title);
-
-  //   const temp = tickets.filter((item) => item.status === "Backlog");
-  //   console.log("temp",temp.length)
-
-  //   console.log(title, filterBy);
-  //   const custom_tickets = [
-  //     {
-  //       id: "CAM-7",
-  //       priority: 2,
-  //       status: "Backlog",
-  //       tag: ["Feature Request"],
-  //       title: "Create Onboarding Tutorial for New Users",
-  //       userId: "usr-1",
-  //     },
-  //     {
-  //       id: "CAM-8",
-  //       priority: 2,
-  //       status: "Backlog",
-  //       tag: ["Feature Request"],
-  //       title: "Create Onboarding Tutorial for New Users",
-  //       userId: "usr-1",
-  //     },
-  //   ];
+  
 
   const custom_tickets = filterArray(tickets, filterBy, title);
 
@@ -61,7 +33,6 @@ function Col({ title, filterBy, _title }) {
       return a.title.localeCompare(b.title); // Alphabetical title order
     }
   });
-  //   console.log(customtickets);
 
   return (
     <div className="flex flex-col gap-2 flex-wrap shrink">
@@ -84,10 +55,6 @@ function Col({ title, filterBy, _title }) {
       {custom_tickets.map((ticket) => (
         <Card ticket={ticket} key={ticket.id} />
       ))}
-      {/* <Card />
-      <Card />
-      <Card />
-      <Card /> */}
     </div>
   );
 }

@@ -1,7 +1,4 @@
 import TuneIcon from "@mui/icons-material/Tune";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { useEffect, useRef, useState } from "react";
 import DropDown from "./DropDown";
 import Switcher from "./Switcher";
@@ -21,13 +18,8 @@ function Header() {
         toggleDivRef.current &&
         !toggleDivRef.current.contains(event.target)
       ) {
-        // console.log(
-        //   toggleDivRef.current && !toggleDivRef.current.contains(event.target)
-        // );
         setToggle(false);
         console.log(event.target);
-        // console.log(toggleDivRef.current.contains(event.target));
-        // console.log(event.target);
       }
     };
     document.addEventListener("click", handleClickOutside);
@@ -48,8 +40,6 @@ function Header() {
         >
           <TuneIcon />
           <h2 className="text-s">Display</h2>
-          {/* {toggle ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon ca />}
-           */}
           <MdKeyboardArrowDown 
             className={`${
               toggle ? "rotate-180 " : "rotate-0 "
@@ -60,7 +50,6 @@ function Header() {
         {toggle ? <DropDown /> : null}
       </div>
       <h2>
-        {/* <DarkModeIcon /> */}
         <Switcher />
       </h2>
     </div>
