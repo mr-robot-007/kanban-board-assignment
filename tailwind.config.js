@@ -6,6 +6,7 @@ export default {
       boxShadow: {
         "3xl": "0 0 8px 0 #C4C4C4",
       },
+      
     },
     screens: {
       sm: "500px",
@@ -23,6 +24,7 @@ export default {
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },
+    
   },
   plugins: [],
   darkMode: "class",

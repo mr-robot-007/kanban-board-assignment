@@ -16,13 +16,13 @@ export default function SelectLabels() {
 
   return (
     <div
-      className=" absolute top-14 left-4 z-[100] bg-white p-4 rounded-lg shadow-md
+      className="  absolute top-10 left-[-2px] z-[100] bg-white p-4 shadow-md
     text-sm border-2 border-slate-200 px-3 py-3 rounded-md space-y-1 inline-block"
     >
       <div className="flex items-center justify-between space-x-14">
-        <h2 className="">Grouping</h2>
+        <h2 className="checkContains">Grouping</h2>
         <select
-          className="border-2 rounded-md border-slate-200 w-24 px-2 py-1"
+          className=" checkContains border-2 rounded-md border-slate-200 w-24 px-2 py-1"
           onChange={handleGroupingChange}
           value={grouping}
         >
@@ -32,9 +32,9 @@ export default function SelectLabels() {
         </select>
       </div>
       <div className="flex items-center justify-between space-x-14">
-        <h2 className="">Ordering</h2>
+        <h2 className="checkContains">Ordering</h2>
         <select
-          className="border-2 rounded-md border-slate-200 w-24 px-2 py-1"
+          className="checkContains border-2 rounded-md border-slate-200 w-24 px-2 py-1"
           onChange={handleOrderingChange}
           value={ordering}
         >
